@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!-- this lines ensures responsiveness -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Jonas Fernandes Portfolio Website </title>
+        <!-- normalize css file: evens out all the differences in the different browsers-->
+        <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+         <link rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <link rel='icon' href='img/jf_code.png' type='image/x-icon'/ >
+         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans
+         +Pro:300,900&display=swap" rel="stylesheet">
+
+         <link rel="stylesheet" href="css/style.css">
+
+     </head>
+     <body>
+        <header>
+            <div class="logo">
+                <img src="img/jf_code.png" alt="logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+              <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link">My Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+           <h1 class="section__title section__title--intro">
+              <img src="img/jonas_fernandes_smaller.png" >
+              </h1>
+            <p class="section__subtitle section__subtitle--intro">WEB DEV</p>
+            <img src="img/propic.jpg" alt="my professional picture" class="intro__img">
+        </section>
+
+        <!-- My skills -->
+        <section class="my-skills" id="skills">
+          <h2 class="section__title section__title--skills">My Skills</h2>
+          <div class="skill">
+            <h3>Languages</h3>
+          <br/>
+                <div class="skills">
+                    <br/>
+                    <img src="img/html5_small.png" style="width:5em; height:5em;">
+                    <br/>
+                    <img src="img/cssnew_small.png"style="width:5em; height:5em;">
+                    <br/>
+                <div class="skills">
+                    <img src="img/javascript_small.png">
+                    <br/>
+                    <img src="img/ruby_smaller.png">
+                    <br/>
+                    <img src="img/sql _small_2.png">
+                </div>
+
+                </div> <!-- / skill -->
+
+                <div class="skill">
+                    <h3>Frameworks</h3>
+                    <br/>
+                    <div class="skills" style="width: 169px">
+                    <img src="img/react_smaller.png">
+                    <br/>
+                    <img src="img/ruby_on_rails_smaller.png">
+                  </div>
+                </div> <!-- / skill -->
+
+                <div class="skill">
+                    <h3>Other Skills</h3>
+                    <br/>
+                    <div class="skills"style="width: 200px">
+                    <img src="img/github_small-2.png">
+                    <br/>
+                    <img src=img/aws_small.png>
+
+                </div> <!-- / skill -->
+            </div> <!-- / skills -->
+
+            <a href="#about" class="btn">About Me</a>
+            <a href="#project" class="btn">My Projects</a>
+          </section>
+          <!-- About me -->
+          <section class="about-me" id="about">
+              <h2 class="section__title section__title--about">About Me</h2>
+              <p class="section__subtitle section__subtitle--about">Web Developer</p>
+
+              <div class="about-me__body">
+                  <p>As a web developer based in San Diego, California, I enjoy working in
+                  front-end development and get a kick out of back-end development. I have completed Learn Academy’s
+                  bootcamp and have built a strong foundation in full stack development.</p>
+                  <p>Before my career shift into web development, I worked as a multilingual
+                  interpreter/linguist for local and international organizations. I am fluent in 4 languages and
+                  have a Master of Arts in International Relations from the University of Toronto, Canada.
+                  </p>
+                  <p>When I’m not coding, I enjoy the intricacies of growing grapes and wine-making,
+                  the adventures in traveling, the liberation of the ocean and the special time I spend with
+                  friends and family.</p>
+
+                </div>
+
+                      <img src="img/grape.jpg" alt="Jonas laid back pic" class="about-me__img">
+                    </section>
+
+
+        <!-- My Projects -->
+        <section class="my-project" id="project">
+            <h2 class="section__title section__title--project">My Projects</h2>
+            <p class="section__subtitle section__subtitle--project">A selection of my student projects</p>
+
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a target="_blank" href="https://github.com/jonas-fernandes/madlibs-1" class="portfolio__item">
+                    <img src="img/portfolio-01.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio item 02 -->
+                <a target="_blank" href="https://github.com/jonas-fernandes/ShakerAustinJonasPigLatin" class="portfolio__item">
+                    <img src="img/portfolio-02.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio item 03 -->
+                <a target="_blank" href="https://github.com/jonas-fernandes/robot-text-project" class="portfolio__item">
+                    <img src="img/portfolio-03.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio item 04 -->
+                <a target="_blank" href="https://github.com/jonas-fernandes/dice" class="portfolio__item">
+                    <img src="img/portfolio-04.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio item 05 -->
+                <a target="_blank" href="https://github.com/jonas-fernandes/jonas-fernandes.github.io" class="portfolio__item">
+                    <img src="img/portfolio-05.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio item 06 -->
+                <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-06.jpg" alt="" class="portfolio__img">
+                </a>
+
+                <!-- Portfolio item 07 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-07.jpg" alt="" class="portfolio__img">
+                </a> -->
+
+                <!-- Portfolio item 08 -->
+                  <!-- <a href="#" class="portfolio__item">
+                      <img src="img/portfolio-08.jpg" alt="" class="portfolio__img">
+                  </a> -->
+
+                 <!-- Portfolio item 09 -->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-09.jpg" alt="" class="portfolio__img">
+                </a> -->
+
+                <!-- Portfolio item 0 0-->
+                <!-- <a href="#" class="portfolio__item">
+                    <img src="img/portfolio-10.jpg" alt="" class="portfolio__img">
+                </a> -->
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:jonasabfernandes@gmail.com" class="footer__link">jonasabfernandes@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a target="_blank" class="social-list__link" href="https://www.linkedin.com/in/jonas-fernandes-46b1b249">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                </li>
+                <li class="social-list__item">
+                    <a target="_blank"class="social-list__link" href="https://github.com/jonas-fernandes">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
+
+    </body>
+</html>
