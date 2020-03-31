@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <!-- this lines ensures responsiveness -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Jonas Fernandes Portfolio Website </title>
+        <title> Jonas Fernandes </title>
         <!-- normalize css file: evens out all the differences in the different browsers-->
         <link rel="stylesheet"
          href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -22,7 +22,7 @@
      <body>
         <header>
             <div class="logo">
-                <img src="img/jf_code.png" alt="logo">
+                <a href="index.html"> <img src="img/jf_code.png" alt="logo"> </a>
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
               <span class="hamburger"></span>
@@ -32,7 +32,8 @@
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                     <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
                     <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#project" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#project" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#footer" class="nav__link">My Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -43,6 +44,23 @@
               <img src="img/jonas_fernandes_smaller.png" >
               </h1>
             <p class="section__subtitle section__subtitle--intro">WEB DEV</p>
+            <ul class="social-list">
+              <li class="social-list__item">
+                  <a target="_blank" class="social-list__link" href="mailto:jonasabfernandes@gmail.com" style="color: #0B132B;">
+                       <i class="far fa-envelope"></i>
+                  </a>
+              </li>
+                <li class="social-list__item">
+                    <a target="_blank" class="social-list__link" href="https://www.linkedin.com/in/jonas-fernandes-dev"style="color: #0B132B;">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a target="_blank"class="social-list__link" href="https://github.com/jonas-fernandes" style="color: #0B132B;">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
             <img src="img/propic.jpg" alt="my professional picture" class="intro__img">
         </section>
 
@@ -100,7 +118,7 @@
               <div class="about-me__body">
                   <p>As a web developer based in San Diego, California, I enjoy working in
                   front-end development and get a kick out of back-end development. I have completed Learn Academy’s
-                  bootcamp and have built a strong foundation in full stack development.</p>
+                  bootcamp and have built a strong foundation in full stack technologies.</p>
                   <p>Before my career shift into web development, I worked as a multilingual
                   interpreter/linguist for local and international organizations. I am fluent in 4 languages and
                   have a Master of Arts in International Relations from the University of Toronto, Canada.
@@ -117,8 +135,8 @@
 
         <!-- My Projects -->
         <section class="my-project" id="project">
-            <h2 class="section__title section__title--project">My Projects</h2>
-            <p class="section__subtitle section__subtitle--project">A selection of my student projects</p>
+            <h2 class="section__title section__title--project">My Work</h2>
+            <p class="section__subtitle section__subtitle--project">A selection of my projects</p>
 
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
@@ -174,14 +192,13 @@
         </section>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <a href="mailto:jonasabfernandes@gmail.com" class="footer__link">jonasabfernandes@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a target="_blank" class="social-list__link" href="https://www.linkedin.com/in/jonas-fernandes-46b1b249">
+                    <a target="_blank" class="social-list__link" href="https://www.linkedin.com/in/jonas-fernandes-dev">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                </li>
                 </li>
                 <li class="social-list__item">
                     <a target="_blank"class="social-list__link" href="https://github.com/jonas-fernandes">
