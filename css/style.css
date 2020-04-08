@@ -59,7 +59,6 @@ section {
 
 img {
   display: block;
-  max-width: 100%;
 }
 
 strong { font-weight: var(--fw-bold) }
@@ -72,7 +71,8 @@ strong { font-weight: var(--fw-bold) }
 /* Buttons */
 
 .btn {
-    display: inline-block;
+    display:block;
+    margin-bottom: 10px;
     padding: .5em 2.5em;
     background: var(--clr-accent);
     color: var(--clr-dark);
@@ -83,11 +83,15 @@ strong { font-weight: var(--fw-bold) }
     letter-spacing: 2px;
     font-weight: var(--fw-bold);
     transition: transform 200ms ease-in-out;
-    margin-left: 19px;
+
 }
 
 .btn:hover {
     transform: scale(1.1);
+}
+
+.first {
+  margin-right: 0;
 }
 
 
@@ -271,6 +275,10 @@ header {
         grid-template-columns: min-content max-content;
     }
 
+    .social-list-top{
+        padding-left: 80% !important;
+    }
+
 
     .intro__img {
         grid-area: img;
@@ -292,7 +300,8 @@ header {
 
 
 
-/*  My skills section  */
+/*  My
+ section  */
 
 .my-skills {
     background-color: var(--clr-dark);
@@ -320,7 +329,37 @@ header {
 }
 
 .skills {
-    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:20px;
+}
+
+.skills img{
+    width: 25%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom:20px;
+}
+
+.languages img{
+  width: 18%;
+  height: auto ;
+  margin-right: 19px;
+  box-sizing: border-box;
+}
+
+.bigger{
+  width: 16% !important;
+    max-height: 52px;
 }
 
 .skill {
@@ -328,16 +367,34 @@ header {
     margin: 0 auto;
 }
 
+
+
 @media (min-width: 800px) {
-    .skills {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+
+  .btn {
+      display: inline-block;
+    min-width: 178px;
+
     }
 
+    .first {
+      margin-right: 5px;
+    }
+    .skills {
+
+        max-width: 1000px;
+    }
+
+    .bigger{
+        max-height: 64px;
+    }
+
+    /*.skills img{
+        width: 90px;
+        height: 90px;
+    }*/
+
     .skill + .skill {
-        margin-left: 2em;
     }
 }
 
@@ -453,6 +510,18 @@ header {
     justify-content: center;
     margin: 2em 0 0;
     padding: 0;
+}
+
+.social-list-top{
+  grid-column: -1 / 1;
+    grid-row: 2;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 3em 0 0;
+    padding: 0;
+    padding-left: 63%;
+    box-sizing: border-box;
 }
 
 .social-list__item {
